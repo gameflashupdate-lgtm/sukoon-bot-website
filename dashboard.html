@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sukoon - Get Started</title>
+<title>Sukoon - Authorize Dashboard</title>
 
 <style>
 /* Base Styles */
@@ -16,10 +16,11 @@ header{display:flex;justify-content:space-between;align-items:center;padding:2re
 .dashboard-container h2{font-size:2.5rem;margin-bottom:1rem;color:#00ffbf}
 .dashboard-container p{margin-bottom:2rem;color:#ccc}
 
-/* Authorization Button (Invite Style) */
+/* Authorization Button (Discord Style) */
 .auth-btn{display:inline-block;background:#7289da; /* Discord Blue */color:#fff;font-weight:bold;padding:1rem 2rem;border-radius:5px;text-decoration:none;font-size:1.2rem;transition:.3s ease-in-out;box-shadow: 0 4px 6px rgba(0,0,0,0.2)}
 .auth-btn:hover{background:#677bc4;box-shadow: 0 6px 8px rgba(0,0,0,0.3)}
-.auth-btn img{height:1.5rem;vertical-align:middle;margin-right:10px}
+/* Added a placeholder image tag for the logo, using a common Discord icon link */
+.auth-btn .discord-logo{height:1.5rem;vertical-align:middle;margin-right:10px}
 .auth-note{margin-top:2rem;font-size:0.9rem;color:#888}
 
 /* Footer */
@@ -40,15 +41,15 @@ footer{text-align:center;padding:2rem;color:#555;font-size:0.9rem;margin-top: 5r
 
 <div class="dashboard-container">
     <h2>Access the Server Dashboard</h2>
-    <p>The web panel for managing server settings is currently under development. To get started, please invite the bot to your server first!</p>
+    <p>The web panel for managing server settings is currently under development. To get started, please authorize your account and invite the bot first!</p>
 
     <a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank" class="auth-btn">
-        <img src="https://assets-global.website-files.com/6257ade93ee1e7075c3d846e/625e5f50fdb8106d7596a79e_Discord-Logo-White.png" alt="Discord Logo">
-        Invite Sukoon to Server
+        <img src="https://assets-global.website-files.com/6257ade93ee1e7075c3d846e/625e5f50fdb8106d7596a79e_Discord-Logo-White.png" alt="Discord Logo" class="discord-logo">
+        Authorize & Invite Sukoon
     </a>
     
     <p class="auth-note">
-        *Once the panel is complete, this button will allow you to securely log in with Discord.*
+        *Once the full panel is complete, this button will securely log in with Discord and show your managed servers.*
     </p>
     <p class="auth-note" style="margin-top: 10px;">
         For immediate assistance, join our Support Server: <a href="https://discord.gg/sukoonontop" target="_blank" style="color:#00ffbf;">https://discord.gg/sukoonontop</a>
