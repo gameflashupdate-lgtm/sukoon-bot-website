@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sukoon - Advanced Multipurpose Discord Bot by Space</title>
+
+<meta name="description" content="Sukoon is the ultimate feature-rich, advanced multipurpose Discord bot with all your needs: Moderation, music, leveling, and fun. Developed by Space. Invite Sukoon today!">
+<meta property="og:title" content="Sukoon - All Your Discord Needs in One Bot">
+<meta property="og:description" content="Sukoon is a feature-rich, advanced multipurpose Discord bot with all your needs. Invite today!">
+<meta property="og:url" content="https://yourwebsiteurl.com">
+<meta property="og:image" content="https://storage.googleapis.com/uploaded/sukoonbot.webp"> 
+<meta name="theme-color" content="#00bfff"> 
+
+<style>
+/* Base Styles */
+*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0a0a;color:#fff;font-family:sans-serif;overflow-x:hidden;position:relative;min-height:100vh}
+/* Header */
+header{display:flex;justify-content:space-between;align-items:center;padding:2rem;position:relative;z-index:10}header h1{font-size:1.8rem;letter-spacing:2px}nav a{color:#fff;text-decoration:none;margin-left:2rem;position:relative}nav a::after{content:'';position:absolute;width:0;height:2px;left:0;bottom:-5px;background:#00bfff;transition:.3s}nav a:hover::after{width:100%}
+/* Main Hero Section */
+main{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;z-index:10;padding:0 2rem}main h2{font-size:3rem;line-height:1.2;background:linear-gradient(270deg,#00bfff,#00ffbf,#00bfff);background-size:400% 400%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient 8s ease infinite;margin-bottom:1rem}main p{color:#ccc;max-width:600px;margin-bottom:1rem;line-height:1.5}main .stats{color:#00ffbf;font-size:1.1rem;margin-bottom:2rem;}main .btns a{display:inline-block;background:#00bfff;color:#000;padding:1rem 2rem;border-radius:50px;text-decoration:none;margin:0 1rem;transition:.3s}main .btns a:hover{background:#00ffbf}
+/* Features Section */
+.features{padding:6rem 2rem;position:relative;z-index:10}.features h2{text-align:center;font-size:2.5rem;margin-bottom:3rem}.feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.feature{backdrop-filter:blur(10px);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:15px;transition:.3s;position:relative;overflow:hidden;text-align:left}.feature:hover{transform:translateY(-5px)}.feature h3{font-size:1.5rem;margin-bottom:.5rem;color:#00bfff}.feature p{color:#bbb;margin-top:.5rem;font-size:0.95rem}.feature span{font-weight:bold;display:block;margin-bottom:.5rem;color:#fff}
+/* Command Section */
+.commands{padding:4rem 2rem;text-align:center;position:relative;z-index:10}.commands h2{font-size:2rem;margin-bottom:2rem;color:#00bfff}.command-examples{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;}.command-examples code{background:#1a1a1a;color:#fff;padding:0.75rem 1.5rem;border-radius:8px;font-family:monospace;font-size:1rem;border:1px solid #00bfff22;}
+/* Testimonial Section */
+.testimonial{padding:6rem 2rem;text-align:center;position:relative;z-index:10;background:#111}.testimonial h2{font-size:2rem;margin-bottom:2rem}.testimonial p{max-width:600px;margin:0 auto 1rem;font-style:italic;color:#bbb;font-size:1.1rem}.testimonial h4{margin-top:1rem;color:#00bfff}
+/* More Info Section */
+.more-info{padding:6rem 2rem;text-align:center;position:relative;z-index:10} .more-info h2{font-size:2rem;margin-bottom:1rem} .more-info p{max-width:700px;margin:0 auto;color:#ccc;line-height:1.6}
+/* CTA Section */
+.cta{background:linear-gradient(90deg,#00bfff,#00ffbf);padding:4rem 2rem;text-align:center;position:relative;z-index:10} .cta h2{font-size:2rem;margin-bottom:1rem;color:#000} .cta a{display:inline-block;background:#000;color:#00bfff;padding:1rem 2rem;border-radius:50px;text-decoration:none;transition:.3s} .cta a:hover{background:#222}
+/* Background Animation */
+.bg span{position:absolute;display:block;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#00bfff55,#00ffbf33);animation:move 40s linear infinite} .bg span:nth-child(1){top:10%;left:15%;animation-duration:50s}.bg span:nth-child(2){top:50%;left:80%;animation-duration:60s}.bg span:nth-child(3){top:80%;left:40%;animation-duration:70s}.bg span:nth-child(4){top:30%;left:60%;animation-duration:80s}@keyframes move{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(-1200px) rotate(360deg)}}
+/* Gradient Text Animation */
+@keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+/* Footer */
+footer{text-align:center;padding:2rem;color:#555;font-size:0.9rem}footer a{color:#00bfff;text-decoration:none;margin: 0 10px;transition:.3s}footer a:hover{color:#00ffbf;}
+/* Responsive Styles */
+@media(max-width:768px){main h2{font-size:2rem}nav a{margin-left:1rem}main .btns a{margin:1rem 0;display:block}.features h2{font-size:2rem}}
+</style>
+</head>
+<body>
+<div class="bg">
+<span></span><span></span><span></span><span></span>
+</div>
+<header>
+<h1>Sukoon</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="#features">Features</a>
+<a href="https://panel.sukoonpvt.com/" target="_blank">Dashboard</a>
+<a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank">Invite</a>
+<a href="https://discord.gg/sukoonontop" target="_blank">Discord</a>
+</nav>
+</header>
+<main>
+<h2>Sukoon: All Your Discord Needs in One Bot</h2>
+<p>The ultimate feature-rich, advanced **multipurpose** Discord bot with all your needs. From moderation, music, leveling, and fun. Developed by **Space**.</p>
+<div class="stats">
+    ⭐ 100k+ Users | 🌐 1,000+ Servers
+</div>
+<div class="btns">
+<a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank">Invite Sukoon</a>
+<a href="https://discord.gg/sukoonontop" target="_blank">Join Support Discord</a>
+</div>
+</main>
+<section class="features" id="features">
+<h2>Powerful Features</h2>
+<div class="feature-list">
+<div class="feature"><span>Feature 1</span><h3>Advanced Moderation</h3><p>AI-powered auto bans, smart filters, timeouts, and detection for bad behavior 24/7. Keep your server peaceful.</p></div>
+<div class="feature"><span>Feature 2</span><h3>High-Quality Music</h3><p>Lag-free music streaming from platforms like YouTube. Features include custom queues, volume control, and easy slash commands.</p></div>
+<div class="feature"><span>Feature 3</span><h3>Custom Leveling System</h3><p>Reward active members with XP, customizable levels, and automatic role assignment to boost engagement and activity.</p></div>
+<div class="feature"><span>Feature 4</span><h3>Games & Fun</h3><p>Engage your community with unique games, competitive trivia, funny reaction commands, and built-in meme generators.</p></div>
+<div class="feature"><span>Feature 5</span><h3>Dashboard & Customization</h3><p>Manage bot settings, configure server logs, and easily create custom commands through a dedicated web panel.</p></div>
+<div class="feature"><span>Feature 6</span><h3>Reliability & Support</h3><p>Enjoy guaranteed 99.9% uptime, detailed logging tools, and fast, friendly developer support from **Space** and the team.</p></div>
+</div>
+</section>
+
+<section class="commands">
+    <h2>🔗 Easy Slash Command Preview</h2>
+    <p>Get started instantly with our most popular commands—designed for simplicity and efficiency.</p>
+    <div class="command-examples">
+        <code>/play [song name]</code>
+        <code>/mod ban @user</code>
+        <code>/level</code>
+        <code>/fun trivia</code>
+        <code>/settings prefix</code>
+    </div>
+</section>
+
+<section class="testimonial">
+<h2>Trusted by Growing Communities</h2>
+<p>"This bot saved us hours of admin work. Our members love the games and the leveling system keeps everyone engaged!"</p>
+<h4>— Satisfied Server Owner</h4>
+</section>
+<section class="more-info">
+<h2>Powered by Sukoon</h2>
+<p>Sukoon is a cutting-edge bot designed for stability and fun. Owner/Dev: **Space**. Join our support community to get help or contribute to its development.</p>
+</section>
+<section class="cta">
+<h2>Ready to Bring Peace to Your Server?</h2>
+<a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank">Invite Sukoon to Server</a>
+</section>
+<footer>
+    <p>&copy; 2025 Sukoon Bot. All rights reserved. Developed by **Space**.</p>
+    <p>
+        <a href="tos.html" target="_blank">Terms of Service</a> | 
+        <a href="privacy.html" target="_blank">Privacy Policy</a>
+    </p>
+</footer>
+</body>
+</html>
