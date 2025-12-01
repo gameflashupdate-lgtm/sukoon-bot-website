@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sukoon - Server Dashboard</title>
+<title>Sukoon - Get Started</title>
 
 <style>
 /* Base Styles */
@@ -12,21 +12,15 @@
 header{display:flex;justify-content:space-between;align-items:center;padding:2rem;position:relative;z-index:10;border-bottom: 1px solid #00bfff22;}header h1{font-size:1.8rem;letter-spacing:2px}nav a{color:#fff;text-decoration:none;margin-left:2rem;position:relative}nav a:hover{color: #00ffbf;}
 
 /* Dashboard Main Content */
-.dashboard-container{max-width:1000px;margin:5rem auto;padding:2rem;text-align:center}
-.dashboard-container h2{font-size:2.5rem;margin-bottom:1rem;color:#00bfff}
-.dashboard-container p{margin-bottom:3rem;color:#ccc}
+.dashboard-container{max-width:800px;margin:5rem auto;padding:3rem;text-align:center;background:rgba(255,255,255,0.05);border-radius:15px;border:1px solid #00bfff33;}
+.dashboard-container h2{font-size:2.5rem;margin-bottom:1rem;color:#00ffbf}
+.dashboard-container p{margin-bottom:2rem;color:#ccc}
 
-/* Server Selection Panel */
-.server-panel{background:rgba(255,255,255,0.05);padding:2rem;border-radius:15px;border:1px solid #00bfff33;text-align:left}
-.server-panel h3{font-size:1.5rem;margin-bottom:1.5rem;color:#00ffbf}
-.server-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-.server-item{display:flex;align-items:center;justify-content:space-between;background:#1a1a1a;padding:1rem;border-radius:8px;border-left:5px solid transparent;transition:.3s;cursor:pointer}
-.server-item:hover{border-left:5px solid #00bfff;background:#181818}
-.server-item span{font-size:1.1rem}
-.server-item button{background:#00bfff;color:#000;border:none;padding:0.5rem 1rem;border-radius:5px;cursor:pointer;transition:.3s}
-.server-item button:hover{background:#00ffbf}
-.server-item.disabled{opacity:0.5;cursor:not-allowed;}
-.server-item.disabled button{background:#333;color:#999;cursor:not-allowed;}
+/* Authorization Button (Invite Style) */
+.auth-btn{display:inline-block;background:#7289da; /* Discord Blue */color:#fff;font-weight:bold;padding:1rem 2rem;border-radius:5px;text-decoration:none;font-size:1.2rem;transition:.3s ease-in-out;box-shadow: 0 4px 6px rgba(0,0,0,0.2)}
+.auth-btn:hover{background:#677bc4;box-shadow: 0 6px 8px rgba(0,0,0,0.3)}
+.auth-btn img{height:1.5rem;vertical-align:middle;margin-right:10px}
+.auth-note{margin-top:2rem;font-size:0.9rem;color:#888}
 
 /* Footer */
 footer{text-align:center;padding:2rem;color:#555;font-size:0.9rem;margin-top: 5rem;}footer a{color:#00bfff;text-decoration:none;margin: 0 10px;transition:.3s}footer a:hover{color:#00ffbf;}
@@ -38,44 +32,27 @@ footer{text-align:center;padding:2rem;color:#555;font-size:0.9rem;margin-top: 5r
 <nav>
 <a href="index.html">Home</a>
 <a href="#features">Features</a>
-<a href="dashboard.html">Dashboard</a> <a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank">Invite</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank">Invite</a>
 <a href="https://discord.gg/sukoonontop" target="_blank">Discord</a>
 </nav>
 </header>
 
 <div class="dashboard-container">
-    <h2>Welcome to the Server Dashboard</h2>
-    <p>Please select the Discord server you wish to configure. Only servers where you have **Administrator** permissions are shown.</p>
+    <h2>Access the Server Dashboard</h2>
+    <p>The web panel for managing server settings is currently under development. To get started, please invite the bot to your server first!</p>
 
-    <div class="server-panel">
-        <h3>Your Managed Servers</h3>
-        <div class="server-list">
-            
-            <div class="server-item" onclick="window.location.href='https://panel.sukoonpvt.com/server/Sukoon-HQ'">
-                <span>⭐ Sukoon HQ</span>
-                <button>Manage</button>
-            </div>
-            
-            <div class="server-item" onclick="window.location.href='https://panel.sukoonpvt.com/server/The-Void'">
-                <span>🌐 The Void [1.2k Members]</span>
-                <button>Manage</button>
-            </div>
-
-            <div class="server-item" onclick="window.location.href='https://panel.sukoonpvt.com/server/Sparkys-Server'">
-                <span>🛡️ Sparky's Server</span>
-                <button>Manage</button>
-            </div>
-
-            <div class="server-item disabled">
-                <span>[Bot Missing] Cool Community</span>
-                <button disabled>Invite Bot</button>
-            </div>
-
-        </div>
-        <p style="text-align:center; margin-top:2rem; font-size:0.9rem; color: #888;">
-            *Note: In a real dashboard, this list is dynamically generated after you log in with Discord.*
-        </p>
-    </div>
+    <a href="https://discord.com/oauth2/authorize?client_id=1442225107463569550" target="_blank" class="auth-btn">
+        <img src="https://assets-global.website-files.com/6257ade93ee1e7075c3d846e/625e5f50fdb8106d7596a79e_Discord-Logo-White.png" alt="Discord Logo">
+        Invite Sukoon to Server
+    </a>
+    
+    <p class="auth-note">
+        *Once the panel is complete, this button will allow you to securely log in with Discord.*
+    </p>
+    <p class="auth-note" style="margin-top: 10px;">
+        For immediate assistance, join our Support Server: <a href="https://discord.gg/sukoonontop" target="_blank" style="color:#00ffbf;">https://discord.gg/sukoonontop</a>
+    </p>
 </div>
 
 <footer>
